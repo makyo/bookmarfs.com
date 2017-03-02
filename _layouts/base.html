@@ -6,15 +6,26 @@
     <link rel="stylesheet" type="text/css" href="/assets/style.css" />
 </head>
 <body>
-    <header>
-        <h1><a href="/"><img src="/assets/logo.png" /> Bookmarfs!</a></h1>
-    </header>
-    <article>
-        <h2>{{ page.title }}</h2>
-        {{ content }}
-    </article>
-    <footer>
-        <p>Bookmarfs! &copy; 2013-2017.</p>
-        <p>Logo &copy; TabbieWolf</p>
-    </footer>
+    <div class="wrapper">
+        <header>
+            <h1><a href="/"><img src="/assets/logo.png" /> Bookmarfs!</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li>Posts</li>
+                    <li>Books of the month</li>
+                    <li>Wags</li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h2>{{ page.title }}</h2>
+            {{ content }}
+        </article>
+        <footer>
+            <p>Bookmarfs! &copy; 2013-2017.</p>
+            <p>Logo &copy; TabbieWolf</p>
+        </footer>
+    </div>
 </body>
