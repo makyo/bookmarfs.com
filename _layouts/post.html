@@ -2,4 +2,7 @@
 layout: base
 ---
 
-{{ content }}
+<p><small><em>Posted by {{ page.author }} on {{ page.date|date: '%b %d, %Y' }}</em></small></p>
+<section class="full">
+    {{ content }}
+</section>

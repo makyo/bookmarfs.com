@@ -87,15 +87,49 @@ footer {
     }
 }
 
+.full {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
 .half {
     display: inline-block;
     vertical-align: top;
     padding: 0 1em;
     margin: 0;
     width: 45%;
+    float: left;
 
     p:first-of-type {
         margin-top: 0;
+    }
+}
+
+.current-botm {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.post-list {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        margin: 0 0 0.5em 0;
+        padding: 0.5em;
+        -moz-box-shadow:    3px 3px 6px 0px #ccc;
+        -webkit-box-shadow: 3px 3px 6px 0px #ccc;
+        box-shadow:         3px 3px 6px 0px #ccc;
+        border: 1px dotted #cba;
+
+        &:nth-of-type(odd) {
+            background: url('/assets/ep_naturalwhite.png');
+        }
+
+        a {
+            font-weight: bold;
+        }
     }
 }
 
